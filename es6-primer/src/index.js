@@ -101,3 +101,22 @@ const fetch3 = fetch('https://jsonplaceholder.typicode.com/users/3').then(Respon
 
 Promise.all([fetch1, fetch2, fetch3])
     .then((data) => { logger(`User 1 = ${data[0].name}; User 1 = ${data[1].name}; User 1 = ${data[2].name}`) })
+
+
+const somePromiseFuncion = (variable) => {
+    return new Promise((resolve, reject) => {
+        setTimeout((resolve) => resolve('The promise function worked'))
+    }).then(() => { }).catch()
+}
+
+const useSomePromiseFucntion = async (miliseconds) => {
+    try {
+        const fetch1 = await fetch('https://jsonplaceholder.typicode.com/users/1')
+        
+    }
+    catch (error) {
+        logger(`An Error occured ${error}`)
+    }
+}
+
+useSomePromiseFucntion(4000)
