@@ -106,7 +106,7 @@ Promise.all([fetch1, fetch2, fetch3])
 const somePromiseFuncion = (variable) => {
     return new Promise((resolve, reject) => {
         setTimeout((resolve) => resolve('The promise function worked'))
-    }).then(() => { }).catch()
+    }).then((success) => {`Success: ${success}`},(fail)=>{`Failed: ${fail}`})
 }
 
 const useSomePromiseFucntion = async (miliseconds) => {
