@@ -19,6 +19,8 @@ new Promise(
 ).then((data) => { logger(`${data}`) }).catch((error) => { logger(`${error}`) })
  */
 
+import { im } from "mathjs";
+
 /* 
 var a  = "welecome"
 console.log(a);
@@ -33,10 +35,10 @@ else if (x > 5)
 else { 
     console.log("x is less than 5")
 } */
-/* 
+
 for (var i = 0; i < 11; i++)
     console.log(i);
- */
+ 
 
 var OBJ_literal = {
     one: "ONE", two: "TWO"
@@ -119,4 +121,61 @@ const useSomePromiseFucntion = async (miliseconds) => {
     }
 }
 
-useSomePromiseFucntion(4000)
+useSomePromiseFucntion(4000) 
+
+
+/* function hello() {
+
+    console.log("hello world")
+}
+
+var hello_func = (x) => {
+    console.log(x);
+    console.log("hello world _ inside variable")
+}
+
+hello_func("Welcome");
+
+
+
+/* import print, { appName, dummyFunction } from "./tools.js"
+
+var name = "Clement"
+
+
+
+//print(`Hello , ${appName}`)
+
+
+
+let my_list2 = ["mary", "bat", "Hero", "Villan", "time"]
+
+let my_list3 = ["apple", "mango", "Hero", "Villan", "time"]
+function print_list(list_type) {
+    let [first, second, ...rest_of_words] = list_type
+
+    print(first)
+    print(second)
+
+    for (let i = 0; i < rest_of_words.length; i++)
+        print(rest_of_words[i])
+
+}
+
+
+
+let my_object_literal =
+{
+    name: "Clement",
+    age: 12,
+    surname: "Cheese"
+}
+
+let Special_number = 7
+print(` Name = ${my_object_literal.name}  ${my_object_literal.surname} \n Age : ${my_object_literal.age} \n  ${Special_number}`)
+print(" Name = ${my_object_literal.name}  ${my_object_literal.surname} \n Age : ${my_object_literal.age}")
+
+
+let my_list = ["hello", "bye", "Hero", "Villan", "time"]
+
+my_list */

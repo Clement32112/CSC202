@@ -18,6 +18,7 @@ logger("Hero time once again") */
 export default logger;
 export var appName = "ES6 Review";
 
+
 /* export var dummyFunction = function () {
     return ("inside dummy function")
 } */
